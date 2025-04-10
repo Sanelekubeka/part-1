@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+.myVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire background */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+    padding-top: 25px;
+}
+
+nav h1 {
+    color: white;
+    font-size: 3em;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto; /* Pushes the nav links to the right */
+    padding: 0;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin: 0 2rem; /* Adjust spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size:1em;
+    text-transform: capitalize;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    border: solid white;
+    border-radius: 5px;
+    padding:5px;
+    transition: all 200ms ease;      
+}
+  nav li a:hover {
+    background-color: white;
+    color:black;
+    border: double black;
+ }
+
+ .home-welcome{
+    color:white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 20rem;
+    text-align: center;
+ }
+.home-section {
+    margin: 0%;
+    margin-bottom: 100px;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .home-section a{
+    text-decoration: none;
+    font-size:4em;
+    text-transform: capitalize;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+ }
+ .home-section a {
+   border: solid white;
+   color:white;
+   border-radius: 1rem;  
+ }
+
+ body {
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:transparent;
+}
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background:transparent;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: solid white;
+    border-radius: 8px;
+}
+
+
+
+h2 {
+    text-align: center;
+    color:white;
+}
+label {
+    font-weight: bold;
+    color:white;
+    display: block;
+    margin-top: 10px;
+
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border:solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color:white;
+    font-family: "Audiowide", sans-serif;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    background-color:transparent;
+    color:white;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 5px;
+    border: solid white;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+button:hover {
+    background-color:white;
+    border: double black;
+    color: black;
+}
+
+
+.section {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+}
+.product img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 5px;
+    height: 200px;
+    background-color: white;
+}
+.product h3 {
+    margin: 10px 0 5px;
+    color:white;
+}
+.product p {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* about us code and also remmeber theres other code above that play a role*/
+
+.aboutus-container h1 {
+    color: white;
+    font-family:"Audiowide", sans-serif ;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.aboutus-container h2 {
+    color: white;
+    font-family:"Audiowide", sans-serif ;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.aboutus-container p {
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family:"Audiowide", sans-serif;
+} 
