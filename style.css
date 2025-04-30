@@ -222,3 +222,38 @@ button:hover {
     font-size: 20px;
     font-family:"Audiowide", sans-serif;
 } 
+
+footer {
+    background-color: transparent;
+    color: white;
+    margin-top: 50px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 1px white;
+}
+
+footer div {
+    color:white;
+    font-size: 16px;
+}
+
+footer div h1 {
+    margin: 5px;
+
+}
+footer ul {
+    list-style: none;
+}
+footer ul a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color:white
+}
+footer ul img{
+    margin-right:5px;
+}
