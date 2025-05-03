@@ -257,3 +257,83 @@ footer ul a{
 footer ul img{
     margin-right:5px;
 }
+
+@media all and (max-width: 500px) {
+
+    body {
+        width: 412px;
+    }
+    
+    nav{
+        margin-bottom:100px;
+    padding-top:50px;
+    }
+nav h1 {
+    font-size: 16px;
+}
+nav ul li {
+    margin: 0 10px; /* Adjust spacing */
+}
+nav ul li a  {
+    font-size:10px;
+    font-weight: 200;
+    border-radius: 5px;
+    padding:2px; 
+}
+
+.home-welcome{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 100px;
+ }
+.home-section {
+    margin: 0%;
+    margin-bottom: 100px;
+    padding: 0%;
+}
+ .home-section a{
+    font-size:40px;
+    font-weight: 200;
+
+ }
+ .home-section a {
+   border-radius: 6px;  
+ }
+
+ .aboutus-container h1 {
+    font-size: 25px;
+}
+
+.aboutus-container h2 {
+    font-size: 17px;
+}
+.aboutus-container p {
+    font-size: 15px;
+} 
+
+ footer {
+    color: white;
+    margin-top: 100px;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 1px white;
+}
+
+footer div {
+    color:white;
+    font-size: 10px;
+}
+
+footer div h1 {
+    margin: 3px;
+
+}
+
+footer ul a{
+    font-size: 16px;
+}
+footer ul img{
+    margin-right:3px;
+}
+}
