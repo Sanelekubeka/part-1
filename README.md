@@ -7,6 +7,7 @@ I chanded some code to external css and add few styles i removed the cart sence 
 ceate a smartphone design of my website when uses click on the website using they phones they can see the website clear and when the use the laptop they can also see the website in a structured form depending on with device you use the website will responde by using the feature suted for that kind of device 
 
 add meta tags for SEO SO THE website can be easly found 
+
 references
 
 Slaying The Dragon (2023). Master Media Queries And Responsive CSS Web Design Like a Chameleon! YouTube. Available at: https://www.youtube.com/watch?v=K24lUqcT0Ms.
