@@ -27,20 +27,28 @@
     
     <div class="container">
         <h2>Contact Us</h2>
-        <form action="submit-form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <form id="contactForm" method="post" novalidate>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <div class="error" id="nameError"></div>
 
-            <label for="email">Email:</label>
-            <input type="email" href="mailto:sanelekubeka56@gmail.com" id="email" name="email"  required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <div class="error" id="emailError"></div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+    <div class="error" id="messageError"></div>
 
-            <button type="submit">Send Message</button>
-        </form>
+    <button type="submit">Send Message</button>
+    <div id="formResponse"></div>
+</form>
+
     </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7160.9963930044505!2d28.00330027623462!3d-26.180467277091186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950b9211440e4b%3A0xa369abe5e683dbee!2s18%20Goring%20Ave%2C%20Auckland%20Park%2C%20Johannesburg%2C%202092!5e0!3m2!1sen!2sza!4v1749825284155!5m2!1sen!2sza"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
+
 </main>
 <hr>
 <footer>
@@ -66,6 +74,67 @@
 </footer>
 <script>
   document.getElementById("myVideo").playbackRate = 0.5; // Adjust as needed (0.5 = half speed)
+
+document.getElementById("myVideo").playbackRate = 0.5;
+
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // prevent default form submission
+
+    // Clear old errors
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+    document.getElementById("formResponse").textContent = "";
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    let isValid = true;
+
+    // Validate name
+    if (name === "") {
+        document.getElementById("nameError").textContent = "Name is required.";
+        isValid = false;
+    }
+
+    // Validate email
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,6}$/i;
+    if (!emailPattern.test(email)) {
+        document.getElementById("emailError").textContent = "Please enter a valid email.";
+        isValid = false;
+    }
+
+    // Validate message
+    if (message === "") {
+        document.getElementById("messageError").textContent = "Message is required.";
+        isValid = false;
+    }
+
+    if (!isValid) return;
+
+    // Prepare form data
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    // AJAX submission
+    fetch("submit-form.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("formResponse").textContent = "Message sent successfully!";
+        document.getElementById("contactForm").reset();
+    })
+    .catch(error => {
+        document.getElementById("formResponse").textContent = "Error sending message.";
+        console.error("Error:", error);
+    });
+});
 </script>
  
 </body>
