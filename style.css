@@ -302,18 +302,41 @@ footer ul img{
     margin-right:5px;
 }
 
+/* ======= MENU BUTTON ======= */
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hidden on desktop by default */
+  margin-right: 20px;
+}
 
-@media (max-width: 600px) {
-  nav ul {
+/* ======= RESPONSIVE NAVIGATION ======= */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block; /* Show on small screens */
+  }
+
+  nav {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 20px;
   }
 
-  h1, h2 {
-    text-align: center;
+  nav ul {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
   }
 
-  .section {
-    padding: 10px;
+  nav ul.show {
+    display: flex; /* Shown when toggled */
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 }

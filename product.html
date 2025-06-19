@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="technology,tech,IT" content="smartphones,laptops,smartwatches">
+    <meta name="technology,tech,IT" content="smartphones,laptops,smartwatches,gadgets,technology,electronics, 
+    buy laptops, best laptops, latest laptops, affordable laptops, high-performance laptops, Dell laptops, HP laptops, Asus laptops, Lenovo laptops">
     <link rel="stylesheet" href="style.css">
     <title>products </title> 
 </head>
@@ -11,6 +12,8 @@
         <header>
         <nav>
         <h1>tech world</h1>
+        <button id="menu-toggle" class="menu-btn">&#9776;</button>
+
         <ul>
         <li><a href="index.html"> home</a></li>
         <li><a href="about us.html">about us</a></li>
@@ -33,43 +36,43 @@
               <p>R1199,99</p>
           </div>
           <div class="product">
-              <img src="pictures/smartwatch/Brand: Reflex-Active.jpeg" alt="Riflext-Active">
+              <img src="pictures/smartwatch/Brand: Reflex-Active.jpeg" alt="Riflext-active">
               <h3>Reflex-active</h3>
               <button>buy</button>
               <p>R2999.99</p>
           </div>
           <div class="product">
-              <img src="pictures/smartwatch/Buy Harling Cell Phone Smart Watch - Avail in: Black from Perkal Promo. Available with or without custom branding. Bulk orders only. See here.jpeg" alt="Smart Watch 3">
+              <img src="pictures/smartwatch/Buy Harling Cell Phone Smart Watch - Avail in: Black from Perkal Promo. Available with or without custom branding. Bulk orders only. See here.jpeg" alt="harling">
               <h3>harling</h3>
               <button>buy</button>
               <p>R799.99</p>
           </div>
           <div class="product">
-              <img src="pictures/smartwatch/Fitness Watches & Activity Trackers - Cape Union Mart.webp" alt="Smart Watch 4">
+              <img src="pictures/smartwatch/Fitness Watches & Activity Trackers - Cape Union Mart.webp" alt="cape Union">
               <h3>Cape Union</h3>
               <button>buy</button>
               <p>R999.99</p>
           </div>
           <div class="product">
-              <img src="pictures/smartwatch/Garmin Vivoactive 5, Black.jpg" alt="Smart Watch 5">
+              <img src="pictures/smartwatch/Garmin Vivoactive 5, Black.jpg" alt="Garmin Vivoactive 5">
               <h3>Garmin Vivoactive 5</h3>
               <button>buy</button>
               <p>R2279.99</p>
           </div>
           <div class="product">
-              <img src="pictures/smartwatch/Smart Watches - The Nomadic Indestructible Smartwatch for sale in Johannesburg (ID:622435190).jpg_v=1737497547" alt="Smart Watch 6">
+              <img src="pictures/smartwatch/Smart Watches - The Nomadic Indestructible Smartwatch for sale in Johannesburg (ID:622435190).jpg_v=1737497547" alt="the nomadic Indestructible">
               <h3>the nomadic Indestructible</h3>
               <button>buy</button>
               <p>R3029.99</p>
           </div>
           <div class="product">
-              <img src="pictures/smartwatch/Smart Watches - The Original Indestructible Smart Watch was sold for 1,499.00 on 24 Oct at 19:55 by Aega in Johannesburg (ID:622435145).png_v=1715712786" alt="Smart Watch 7">
+              <img src="pictures/smartwatch/Smart Watches - The Original Indestructible Smart Watch was sold for 1,499.00 on 24 Oct at 19:55 by Aega in Johannesburg (ID:622435145).png_v=1715712786" alt="the original Indestructible">
               <h3>the original Indestructible</h3>
               <button>buy</button>
               <p>R6219.99</p>
           </div>
           <div class="product">
-              <img src="pictures/smartwatch/Ultra-thin body craftmanship, light-weight design and ultra light. Wear without feeling. Features: - HD color screen - Full screen touch - 240 ppi ....file" alt="Smart Watch 8">
+              <img src="pictures/smartwatch/Ultra-thin body craftmanship, light-weight design and ultra light. Wear without feeling. Features: - HD color screen - Full screen touch - 240 ppi ....file" alt="240 ppi">
               <h3>240 ppi</h3>
               <button>buy</button>
               <p>R2289.99</p>
@@ -244,6 +247,16 @@
       lightbox.style.display = "none";
     }
   });
+
+
+  // Toggle navigation menu for mobile
+  const menuBtn = document.getElementById("menu-toggle");
+  const navList = document.querySelector("nav ul");
+
+  menuBtn.addEventListener("click", () => {
+    navList.classList.toggle("show");
+  });
+
 
 </script>
 

@@ -1,0 +1,12 @@
+User-agent:*
+Allow:/
+
+Disallow:
+
+Sitemap:https://sanelekubeka.github.io/part-1/index.html
+
+Sitemap:https://sanelekubeka.github.io/part-1/index.html
+
+Sitemap:https://sanelekubeka.github.io/part-1/product.html
+
+Sitemap:https://sanelekubeka.github.io/part-1/contact%20us.html

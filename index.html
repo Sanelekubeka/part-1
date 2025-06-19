@@ -11,6 +11,8 @@
     <header>
     <nav>
         <h1>tech world</h1>
+        <button id="menu-toggle" class="menu-btn">&#9776;</button>
+
         <ul>
         <li><a href="index.html"> home</a></li>
         <li><a href="about us.html">about us</a></li>
@@ -56,6 +58,14 @@
 </footer>
 <script>
   document.getElementById("myVideo").playbackRate = 0.5; // Adjust as needed (0.5 = half speed)
+
+   // Toggle navigation menu for mobile
+  const menuBtn = document.getElementById("menu-toggle");
+  const navList = document.querySelector("nav ul");
+
+  menuBtn.addEventListener("click", () => {
+    navList.classList.toggle("show");
+  });
 </script>
 
 </body>
