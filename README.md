@@ -6,6 +6,12 @@ I chanded some code to external css and add few styles i removed the cart sence 
 
 ceate a smartphone design of my website when uses click on the website using they phones they can see the website clear and when the use the laptop they can also see the website in a structured form depending on with device you use the website will responde by using the feature suted for that kind of device 
 
+Added a search input at the top of product list
+
+Filters products live as the user types by matching the product name
+
+Works with all three sections (Smart Watches, Laptops, Smartphones) because they all use the same product structure
+
 add meta tags for SEO SO THE website can be easly found 
 on page SEO fixed the title tages to mach the contant on each page 
 add mata tages to discribe the contant on each page and for search engines to easly find the website 
