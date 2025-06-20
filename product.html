@@ -26,6 +26,10 @@
 
     </video>
     <main>
+        <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search products...">
+</div>
+
     <div class="section">
       <h2>Smart Watches</h2>
       <div class="product-grid">
@@ -256,6 +260,25 @@
   menuBtn.addEventListener("click", () => {
     navList.classList.toggle("show");
   });
+
+
+    // Product search filter
+  const searchInput = document.getElementById("searchInput");
+  const products = document.querySelectorAll(".product");
+
+  searchInput.addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+
+    products.forEach(product => {
+      const name = product.querySelector("h3").textContent.toLowerCase();
+      if (name.includes(query)) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+  });
+
 
 
 </script>
