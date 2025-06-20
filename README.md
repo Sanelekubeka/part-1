@@ -21,7 +21,6 @@ i implimented a lightbox to show images in a lager scale when clicked and to app
  
 improved version of my HTML CONTACT page that includes
 
-JavaScript form validation: It checks if all fieldHostinger Academy (2023). What Is Robots.txt | Explained. [online] YouTube. Available at: https://www.youtube.com/watch?v=QMzeiTov6a8 [Accessed 7 May 2025].
 
 ‌s are filled, if the email is valid and displays error messages if not
 
@@ -48,6 +47,8 @@ W3Schools (2019). HTML meta tag. [online] W3schools.com. Available at: https://w
 Goring (2019). 18 Goring Ave · 18 Goring Ave, Manchester M18 8WW, UK. [online] 18 Goring Ave · 18 Goring Ave, Manchester M18 8WW, UK. Available at: https://www.google.com/maps/place/18+Goring+Ave [Accessed 13 Jun. 2025].
 
 Hostinger Academy (2023). What Is Robots.txt | Explained. [online] YouTube. Available at: https://www.youtube.com/watch?v=QMzeiTov6a8 [Accessed 7 May 2025].
+
+JavaScript form validation: It checks if all fieldHostinger Academy (2023). What Is Robots.txt | Explained. [online] YouTube. Available at: https://www.youtube.com/watch?v=QMzeiTov6a8 [Accessed 7 May 2025].
 
 ‌
 SEOTesting (2023). The XML Sitemap guide for SEOs. [online] YouTube. Available at: https://www.youtube.com/watch?v=_lGJcZIPXMM [Accessed 19 Jun. 2025].
